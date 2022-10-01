@@ -122,6 +122,8 @@ int main()
   printExperiment3Results(&bPlusTree);
   printExperiment4Results(&bPlusTree);
   printExperiment5Results(&bPlusTree);
+
+  system("pause");
 }
 
 /**
