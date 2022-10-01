@@ -8,6 +8,12 @@ This is a simple simulation of a relational database management system that uses
 
 Installation guides can be found here:
 
+1. Change directory to the folder in your terminal.
+2. Ensure you have a C++ compiler installer. Running `g++ --version` should print the version number.
+3. Run `g++ *.cpp -std=c++11 -o output`
+4. Afterwhich, run `./output` and the program should run with the instruction to enter block size.
+5. If there is some issue follow these guides accordingly to get the program running.
+
 For Mac Users: [MacInstallation](https://github.com/suenalaba/BPlusTree-Indexed-RDBMS/blob/master/installationguides/macinstaller.md)<br>
 For Linux Users: [LinuxInstallation](https://github.com/suenalaba/BPlusTree-Indexed-RDBMS/blob/master/installationguides/linuxinstaller.md) <br>
 For Windows Users: [WindowsInstallation](https://github.com/suenalaba/BPlusTree-Indexed-RDBMS/blob/master/installationguides/windowsinstaller.md) <br>
