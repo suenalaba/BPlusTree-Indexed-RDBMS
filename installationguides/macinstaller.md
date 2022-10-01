@@ -1,6 +1,6 @@
 # Mac Setup and Installation guide
 
-1. Clone this repository using `git clone <REPO_URL>` or unzip the zip folder.
+1. Clone this repository using `git clone https://github.com/suenalaba/BPlusTree-Indexed-RDBMS.git` or unzip the zip folder.
 2. `cd` to the folder and open the project in Visual Studio Code using `code .`
 3. Ensure that you have a C++ compiler. (clang++ for MAC, not sure for Windows.)
 

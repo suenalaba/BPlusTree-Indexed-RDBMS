@@ -122,17 +122,6 @@ int main()
   printExperiment3Results(&bPlusTree);
   printExperiment4Results(&bPlusTree);
   printExperiment5Results(&bPlusTree);
-
-  // bPlusTree.deleteRecordByKey(1);
-  // bPlusTree.deleteRecordByKey(1807);
-  // bPlusTree.deleteRecordByKey(4599);
-  // bPlusTree.deleteRecordByKey(241);
-  // bPlusTree.deleteRecordByKey(198);
-
-
-  // printExperiment3Results(&bPlusTree);
-  // bPlusTree.display(bPlusTree.getRootOfTree());
-
 }
 
 /**
@@ -175,32 +164,32 @@ uint calulateMaximumKeysInBPTreeNode(uint blockSize) {
   // 8(N+1) + 4(N) + 1 + 7 <= blockSize (worst case is add 7 padding)
 
   //blocksize minus size of extra pointer, bool and padding
-  uint lowerN = floor((float) float(blockSize - sizeof(void *) - sizeof(bool) - BOOLEAN_PADDING) / 12);
-  uint upperN = ceil((float) float(blockSize - sizeof(void *) - sizeof(bool) - BOOLEAN_PADDING) / 12);
+  uint lowerN = floor((float) float(blockSize - SIZE_OF_POINTER - sizeof(bool) - BOOLEAN_PADDING) / 12);
+  uint upperN = ceil((float) float(blockSize - SIZE_OF_POINTER - sizeof(bool) - BOOLEAN_PADDING) / 12);
 
   // we try to pack as many keys as possible so we see if upperN can be used
   if ((upperN % 2) == 0) {
     //upperN is even
-    uint totalSize = sizeof(void*) * (upperN + 1) + 4 * upperN + 1 + 7;
+    uint totalSize = SIZE_OF_POINTER * (upperN + 1) + 4 * upperN + 1 + 7;
     if (totalSize <= blockSize) {
       return upperN;
     } 
   } else if ((lowerN % 1) == 0) {
     //upperN is odd
-    uint totalSize = sizeof(void*) * (upperN + 1) + 4 * upperN + 1 + 3;
+    uint totalSize = SIZE_OF_POINTER * (upperN + 1) + 4 * upperN + 1 + 3;
     if (totalSize <= blockSize) {
       return upperN;
     } 
   }
   if ((lowerN % 2) == 0) {
     //lowerN is even
-    uint totalSize = sizeof(void*) * (lowerN + 1) + 4 * lowerN + 1 + 7;
+    uint totalSize = SIZE_OF_POINTER * (lowerN + 1) + 4 * lowerN + 1 + 7;
     if (totalSize <= blockSize) {
       return lowerN;
     } 
   } else if ((lowerN % 1) == 0) {
     //lowerN is odd
-    uint totalSize = sizeof(void*) * (lowerN + 1) + 4 * lowerN + 1 + 3;
+    uint totalSize = SIZE_OF_POINTER * (lowerN + 1) + 4 * lowerN + 1 + 3;
     if (totalSize <= blockSize) {
       return lowerN;
     } 
