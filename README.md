@@ -12,6 +12,9 @@ For Mac Users: [MacInstallation](https://github.com/suenalaba/BPlusTree-Indexed-
 For Linux Users: [LinuxInstallation](https://github.com/suenalaba/BPlusTree-Indexed-RDBMS/blob/master/installationguides/linuxinstaller.md) <br>
 For Windows Users: [WindowsInstallation](https://github.com/suenalaba/BPlusTree-Indexed-RDBMS/blob/master/installationguides/windowsinstaller.md) <br>
 
+The link to the zip folder can be found: [here](https://github.com/suenalaba/BPlusTree-Indexed-RDBMS) <br>
+Go to the link and click the green button `code` and `download as zip`
+
 ## List of contributors
 
 | Name      |                    Github Profile                     |
