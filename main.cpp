@@ -210,7 +210,7 @@ void printExperiment1Results(Storage *disk, uint blockSize, BPlusTree *bPlusTree
   cout << "The number of nodes(blocks) in the B+ Tree is: " << bPlusTree->getNumberOfNodesInTree() << endl;
   cout << "The size of the B Plus Tree index (in MB) is: " << double(bPlusTree->getSizeOfBPlusTree(blockSize))/MB << "MB" << endl;
   // cout << "The size of overflowblocks used (in B) is: " << bPlusTree->getSizeOfOverflowBlocks(blockSize) << "B" << endl;
-  cout << "The number of overflow blocks used are: " << bPlusTree->getNumberOfOverflowBlocks() << endl;
+  // cout << "The number of overflow blocks used are: " << bPlusTree->getNumberOfOverflowBlocks() << endl;
   cout << "The size of the overflowblocks used (in MB) is: " << double(bPlusTree->getSizeOfOverflowBlocks(blockSize))/MB << "MB" << endl;
   cout << "The size of the database (in MB) is the total size of relational data + size of the index which is: ";
   cout << double(disk->getDatabaseSizeByBlocks(blockSize) + bPlusTree->getSizeOfBPlusTree(blockSize) 
